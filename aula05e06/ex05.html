@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+    <style>
+        body {
+            background-color: beige;
+            color:rgb(149, 234, 143);
+            font: normal 12pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p id="paragrafo">paragrafo exemplo</p>
+    <div class="botao">Clique em mim</div>
+
+    <script>
+        //window.document.write(window.document.URL)
+        var x = window.document.getElementsByTagName('div')[0]
+        //window.document.write(`Testando ${x.innerText}`)
+        window.document.write('Testando' + x.innerText)
+        document.querySelector('div.botao')
+        document.getElementById('paragrafo').innerText = 'OI'
+        x.style.background = 'black'
+        // x.innerText = 'OLAAAAAA'
+       
+
+    </script>
+</body>
+</html>

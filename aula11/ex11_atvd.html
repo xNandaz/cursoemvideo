@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <h3>Digite o país que vocẽ mora:</h3>
+    <input type="text" name="txt1" id="txtn1">
+    <input type="button" value="verifica" onclick="verificar()">
+    <div id="res"></div>
+    
+    <script>
+        function verificar() {
+            var texto = document.getElementById('txtn1')
+            var resultado = document.querySelector('div#res')
+
+            
+            if (texto.value == 'Brasil') {
+                resultado.innerHTML = `<p> vocẽ mora no ${texto.value}, logo vocẽ é brasileiro</p>`
+            } else {
+                resultado.innerHTML = `<p>vocẽ é estrangeiro</p>`
+            }
+
+        }
+    </script>
+
+</body>
+</html>
